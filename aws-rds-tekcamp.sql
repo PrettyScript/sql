@@ -1,0 +1,4 @@
+/* I went to AWS RDS site and I logged on and followed the link to create a database. I completed the necessary fields and once the database was created. I was able to retrieve the endpoint link in the Connectivity & security section. I chose AWS because I have experience using their services such as hosting my own site. There services are fairly easy to configure and get up and running quickly. I did come across a blocker, I was unable to connect my aws rds instance, but after doing some intense searches online, I found that I had to configure my inbound settings.
+
+aws-tekcamp.cyqtrlq1y5f6.us-east-2.rds.amazonaws.com
+username: admin, password: awstekcamp */
