@@ -38,13 +38,13 @@ WHERE first_name = 'Rosa';
 
 7. UPDATE tekcampers 
 SET education = "Bachelors Degree"
-WHERE id IN (1, 4, 5, 6, 11, 16, 18, 32, 33);
+WHERE id IN (1, 4, 5, 6, 11, 16, 18, 32, 33, 38);
 UPDATE tekcampers 
 SET education = "High School Diploma"
 WHERE id IN (14, 36, 25);
 UPDATE tekcampers 
 SET education = "Some College"
-WHERE id IN (19, 24, 12, 7, 29, 15, 35);
+WHERE id IN (19, 24, 12, 7, 29, 15, 34, 35);
 UPDATE tekcampers 
 SET education = "Associates Degress"
 WHERE id IN (8, 17);
@@ -126,6 +126,17 @@ ix. SELECT *
     ON tekcampers.first_name = hobbies.first_name;
 
 12. ALTER TABLE tekcampers ADD bootcamp varchar(25) AFTER gender;
+    UPDATE tekcampers SET bootcamp = "Coding Dojo" WHERE id IN (6, 12, 7);
+    UPDATE tekcampers
+    SET bootcamp = "DevMountain"
+    WHERE id IN (17, 25);
+    UPDATE tekcampers
+    SET bootcamp = "Trilogy Education"
+    WHERE id IN (29);
+    UPDATE tekcampers
+    SET bootcamp = "U.S. Navy bootcamp"
+    WHERE id IN (2);
+
 
 13. ALTER TABLE ta_ta_dylan ADD bootcamp varchar(25) AFTER gender;
 
